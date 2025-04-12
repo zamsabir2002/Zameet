@@ -244,11 +244,11 @@ export default function Home() {
       description: "Efficient database schema design and optimization for SQL and NoSQL databases.",
       icon: <Database className="h-10 w-10 text-purple-600" />,
     },
-    {
-      title: "Cloud Deployment",
-      description: "Deployment and configuration of applications on AWS, Azure, or other cloud platforms.",
-      icon: <Cloud className="h-10 w-10 text-purple-600" />,
-    },
+    // {
+    //   title: "Cloud Deployment",
+    //   description: "Deployment and configuration of applications on AWS, Azure, or other cloud platforms.",
+    //   icon: <Cloud className="h-10 w-10 text-purple-600" />,
+    // },
     {
       title: "Performance Optimization",
       description: "Identifying and resolving performance bottlenecks in web applications.",
@@ -783,22 +783,30 @@ export default function Home() {
 
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <div className="bg-purple-100 dark:bg-gray-700 p-3 rounded-full">
-                      <Mail className="h-6 w-6 text-purple-600 dark:text-purple-400" />
-                    </div>
-                    <div>
-                      <p className="font-medium">Email</p>
-                      <p className="text-gray-700 dark:text-gray-300">contact@zameetsabir.com</p>
+                    <a href="mailto:sabirzameet2@gmail.com" target="_blank">
+                      <div className="bg-purple-100 dark:bg-gray-700 p-3 rounded-full" title="sabirzameet2@gmail.com">
+                        <Mail className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                      </div>
+                    </a>
+                    <div title="sabirzameet2@gmail.com">
+                      <a href="mailto:sabirzameet2@gmail.com" target="_blank" >
+                        <p className="font-medium">Email</p>
+                        <p className="text-gray-700 dark:text-gray-300">sabirzameet2@gmail.com</p>
+                      </a>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-4">
-                    <div className="bg-purple-100 dark:bg-gray-700 p-3 rounded-full">
-                      <Github className="h-6 w-6 text-purple-600 dark:text-purple-400" />
-                    </div>
+                    <a href="https://github.com/zamsabir2002/" target="_blank">
+                      <div className="bg-purple-100 dark:bg-gray-700 p-3 rounded-full">
+                        <Github className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                      </div>
+                    </a>
                     <div>
-                      <p className="font-medium">GitHub</p>
-                      <p className="text-gray-700 dark:text-gray-300">github.com/zameetsabir</p>
+                      <a href="https://github.com/zamsabir2002/" target="_blank">
+                        <p className="font-medium">GitHub</p>
+                        <p className="text-gray-700 dark:text-gray-300">github.com/zamsabir2002</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -863,10 +871,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/zamsabir2002/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:sabirzameet2@gmail.com" target="_blank" className="text-gray-400 hover:text-white transition-colors" title="sabirzameet2@gmail.com">
                 <Mail size={20} />
               </a>
             </div>
