@@ -386,7 +386,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-10 transform -translate-x-1/2 animate-bounce">
           <ChevronDown size={32} className="text-purple-600 dark:text-purple-400" />
         </div>
       </section>
