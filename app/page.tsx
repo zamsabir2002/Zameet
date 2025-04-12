@@ -374,9 +374,9 @@ export default function Home() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-75"></div>
               <Avatar className="h-64 w-64 border-4 border-white dark:border-gray-800 relative">
                 <AvatarImage
-                  src="/me.JPG"
+                  src="/me1-nobg.png"
                   alt="Zameet Sabir"
-                  className="object-cover object-[center_70%] image-render-auto scale-150 grayscale-[0.6]"
+                  className="object-cover object-[center_70%] image-render-auto scale-150 "
                   style={{ imageRendering: "auto" }}
                 />
                 <AvatarFallback className="text-5xl bg-gradient-to-br from-purple-600 to-pink-600 text-white">
