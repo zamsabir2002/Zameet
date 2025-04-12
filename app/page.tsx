@@ -277,7 +277,7 @@ export default function Home() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrollY > 50 ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm" : "bg-transparent"}`}
       >
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-white font-bold text-xl">
               <span className="absolute -left-1 text-2xl opacity-30">{`{`}</span>
@@ -343,9 +343,9 @@ export default function Home() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex-1"
+            className="flex-1 ps-4"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h1 className="pb-2 text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Turning Ideas Into Digital Reality
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300">
@@ -373,7 +373,12 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-75"></div>
               <Avatar className="h-64 w-64 border-4 border-white dark:border-gray-800 relative">
-                <AvatarImage src="/placeholder.svg?height=256&width=256" alt="Zameet Sabir" />
+                <AvatarImage
+                  src="/me.JPG"
+                  alt="Zameet Sabir"
+                  className="object-cover object-[center_70%] image-render-auto scale-150 grayscale-[0.6]"
+                  style={{ imageRendering: "auto" }}
+                />
                 <AvatarFallback className="text-5xl bg-gradient-to-br from-purple-600 to-pink-600 text-white">
                   ZS
                 </AvatarFallback>
@@ -387,7 +392,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white dark:bg-gray-800">
+      <section id="about" className="px-4 py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
